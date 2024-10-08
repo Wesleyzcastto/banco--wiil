@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #FED700;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.saldo {
+    background-color: rgba(255, 255, 255, 0.747);
+    height: 150px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.saldo p {
+    font-size: 1.2em;
+}
+
+.separar {
+    background-color: dimgrey;
+    height: 80px;
+    width: 200px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+}
+
+/* Pix and Transferir (alinhamento lado a lado com margem usando inline-block) */
+.pix, .tranferir {
+    background-color: aliceblue;
+    height: 150px;
+    width: 45%; /* Ajustando para 45% para que fiquem lado a lado */
+    margin: 20px 2.5%; /* Margem de 20px em cima/baixo e 2.5% de margem entre as divs */
+    display: inline-block; /* Usando inline-block para as divs ficarem lado a lado */
+    text-align: center;
+    border-radius: 30px;
+    vertical-align: top; /* Garante que as divs fiquem alinhadas no topo */
+    padding: 10px;
+    box-sizing: border-box; /* Garantindo que a largura seja respeitada com a margem */
+}
+
+.pix img, .tranferir img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pix p, .tranferir p {
+    font-size: 1.2em;
+}
+
+.linha{  
+
+    position: relative;
+    bottom: 50px;
+   display: flex;
+
+
+}
+
+/* Ícones principais */
+.icones2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.icones2 div {
+    background-color: #FED700;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.icones2 div:hover {
+    background-color: #FFA500;
+}
+
+.icones2 img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .saldo {
+        width: 90%;
+    }
+
+    .pix, .tranferir {
+        width: 80%;
+    }
+
+    .icones2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .icones2 div {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .saldo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .separar {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .pix, .tranferir {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .icones2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icones2 div {
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+/* Ajustes gerais */
+button {
+    padding: 15px 30px; /* Aumenta o tamanho do botão */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    border: none; /* Remove borda padrão */
+    background-color: #FED700; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave */
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    margin-top: 10px; /* Espaço entre os botões */
+}
+
+/* Adiciona efeito de hover */
+button:hover {
+    background-color: #FFA500; /* Cor quando o botão é pressionado */
+}
+
+/* Outras estilizações */
+.icones2 div {
+    background-color: #FED700;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.icones2 div:hover {
+    background-color: #FFA500;
+}
+
+.icones2 img {
+    width: 50px;
+    height: 50px;
+}
